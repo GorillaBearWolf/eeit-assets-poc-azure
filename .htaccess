@@ -2,8 +2,8 @@
 
     # Site root
     RewriteEngine on
-    RewriteCond %{REQUEST_URI} ^(.*)
-    RewriteRule ^(.*)$ /public/$1 [NC,L,QSA]
+    RewriteCond %{REQUEST_URI} (.*)
+    RewriteRule (.*)$ /public/$1 [L]
     
     <IfModule mod_negotiation.c>
         Options -MultiViews
